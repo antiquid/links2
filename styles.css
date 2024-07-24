@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* light gray background */
+  transition: background-color 0.5s; /* animate background color change */
+}
+
+header {
+  background-color: #fff; /* white background */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: header-animation 1s ease-in-out; /* animate header */
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  animation: title-animation 1s ease-in-out; /* animate title */
+}
+
+.social-media {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: social-media-animation 1s ease-in-out; /* animate social media section */
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  margin-bottom: 20px;
+  animation: list-item-animation 1s ease-in-out; /* animate list items */
+}
+
+.social-media a {
+  color: #337ab7; /* blue color */
+  text-decoration: none;
+  transition: color 0.2s; /* animate color change on hover */
+}
+
+.social-media a:hover {
+  color: #23527c; /* darker blue color on hover */
+  animation: hover-animation 0.5s linear; /* animate hover effect */
+}
+
+.social-media i {
+  font-size: 24px;
+  margin-right: 10px;
+  animation: icon-animation 1s ease-in-out; /* animate icons */
+}
+
+.social-media i:hover {
+  animation: spin 0.5s linear; /* animate icon spin on hover */
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes title-animation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes social-media-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes list-item-animation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hover-animation {
+  0% {
+    transform: scale(1);
+  }
+  
